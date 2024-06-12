@@ -1,10 +1,12 @@
 
-let chaves=['kiko','chiquinha','madruga','barriga','florinda','linguiça','71']
+let chaves=['zé']
+let usuario=['reizé']
 let tentativas=[]
 
 function tentativa(){
     let palavra=document.getElementById('password').value
-    if(chaves.indexOf(palavra)!=-1){
+    let palavra2=document.getElementById('usuario').value
+    if(chaves.indexOf(palavra)!=-1 && usuario.indexOf(palavra2)!=-1){
        // window.location.href='about.html'
         window.open('about.html')
     }
